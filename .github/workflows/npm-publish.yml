@@ -16,7 +16,11 @@ jobs:
         with:
           node-version: 12
       - run: yarn
+      - run: yarn build
       - run: yarn test
+        env:
+            BAIDU_AIP_EASEDL_API_KEY: ${{ secrets.BAIDU_AIP_EASEDL_API_KEY }}
+            BAIDU_AIP_EASEDL_SECRET_KEY: ${{ secrets.BAIDU_AIP_EASEDL_SECRET_KEY }}
 
   publish-npm:
     needs: build
