@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "node-fetch": "^2.6.0",
     "utf8": "^3.0.0"
   },
